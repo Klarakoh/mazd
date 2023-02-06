@@ -1127,6 +1127,14 @@ You must restart your car or your device to apply these changes.
 Reboot now?</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Show Developer UI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show developer UI (Dev UI) for real-time parameters from various sources.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SettingsWindow</name>
