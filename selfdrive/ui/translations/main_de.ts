@@ -156,6 +156,29 @@ Please use caution when using this feature. Only use the blinker when traffic an
     </message>
 </context>
 <context>
+    <name>ChevronInfo</name>
+    <message>
+        <source>Display Metrics above Chevron</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display useful metrics above the chevron that tracks the lead car (only applicable to cars with openpilot longitudinal control).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OFF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Distance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Speed</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ConfirmationDialog</name>
     <message>
         <source>Ok</source>
@@ -182,7 +205,7 @@ Please use caution when using this feature. Only use the blinker when traffic an
     </message>
 </context>
 <context>
-    <name>DevUiRow</name>
+    <name>DevUiInfo</name>
     <message>
         <source>Developer UI List</source>
         <translation type="unfinished"></translation>
@@ -192,11 +215,11 @@ Please use caution when using this feature. Only use the blinker when traffic an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>1-Row</source>
+        <source>5 Metrics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>2-Row</source>
+        <source>10 Metrics</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -330,6 +353,26 @@ Please use caution when using this feature. Only use the blinker when traffic an
         <source>sunnypilot requires the device to be mounted within 4° left or right and within 5° up or 8° down. sunnypilot is continuously calibrating, resetting is rarely required.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Fleet Manager PIN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error Troubleshoot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display error from the tmux session when an error has occurred from a system process.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset Mapbox Access Token</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Are you sure you want to reset the Mapbox access token?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>DriveStats</name>
@@ -426,18 +469,6 @@ Please use caution when using this feature. Only use the blinker when traffic an
     <message>
         <source>Installing...</source>
         <translation>Installiere...</translation>
-    </message>
-    <message>
-        <source>Receiving objects: </source>
-        <translation>Empfange Objekte: </translation>
-    </message>
-    <message>
-        <source>Resolving deltas: </source>
-        <translation>Unterschiede verarbeiten: </translation>
-    </message>
-    <message>
-        <source>Updating files: </source>
-        <translation>Dateien aktualisieren: </translation>
     </message>
 </context>
 <context>
@@ -780,16 +811,8 @@ location set</source>
         <translation>Bist du sicher, dass du das Gerät auf Werkseinstellungen zurücksetzen möchtest?</translation>
     </message>
     <message>
-        <source>Resetting device...</source>
-        <translation>Gerät wird zurückgesetzt...</translation>
-    </message>
-    <message>
         <source>System Reset</source>
         <translation>System auf Werkseinstellungen zurücksetzen</translation>
-    </message>
-    <message>
-        <source>System reset triggered. Press confirm to erase all content and settings. Press cancel to resume boot.</source>
-        <translation>Zurücksetzen auf Werkseinstellungen wurde ausgewählt. Drücke Annehmen, um alle Inhalte und Einstellungen zu löschen. Drücke Abbrechen, um mit dem Starten des Gerätes fortzufahren.</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -804,8 +827,17 @@ location set</source>
         <translation>Bestätigen</translation>
     </message>
     <message>
-        <source>Unable to mount data partition. Press confirm to reset your device.</source>
-        <translation>Datenpartition kann nicht geöffnet werden. Drücke Annehmen, um dein Gerät auf Werkseinstellungen zurückzusetzen.</translation>
+        <source>Unable to mount data partition. Partition may be corrupted. Press confirm to erase and reset your device.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Press confirm to erase all content and settings. Press cancel to resume boot.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Resetting device...
+This may take up to a minute.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -907,19 +939,11 @@ location set</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&quot;Torque Lateral Control Live Tune&quot;&lt;br&gt;You must restart your car or your device to apply these changes.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Torque Lateral Controller Self-Tune</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enables self-tune for Torque lateral control.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&quot;Torque Lateral Controller Self-Tune&quot;&lt;br&gt;You must restart your car or your device to apply these changes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -944,10 +968,6 @@ location set</source>
     </message>
     <message>
         <source>Use speed limit signs information from map data and car interface (if applicable) to automatically adapt cruise speed to road limits.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Enable Speed Limit % Offset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -982,6 +1002,38 @@ location set</source>
         <source>OSM: Use Offline Database</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Toggle M.A.D.S. with Cruise Main</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allows M.A.D.S. engagement/disengagement with &quot;Cruise Main&quot; cruise control button from the steering wheel.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Block Lane Change: Road Edge Detection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable this toggle to block lane change when road edge is detected on the stalk actuated side.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Auto Lane Change: Delay with Blind Spot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Toggle to enable a delay timer for seamless lane changes when blind spot monitoring (BSM) detects a obstructing vehicle, ensuring safe maneuvering.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable Speed Limit Offset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>You must restart your car or your device to apply these changes.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SPGeneralPanel</name>
@@ -1006,14 +1058,6 @@ location set</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Custom Boot Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Display sunnypilot welcome screen while booting the device.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Disable Onroad Uploads</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1022,16 +1066,8 @@ location set</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Error Troubleshoot</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>VIEW</source>
-        <translation type="unfinished">ANSEHEN</translation>
-    </message>
-    <message>
-        <source>Display error from the tmux session when an error has occurred from a system process.</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">ANSEHEN</translation>
     </message>
     <message>
         <source>Debug snapshot on screen center tap</source>
@@ -1041,35 +1077,55 @@ location set</source>
         <source>Stores snapshot file with current state of some modules.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Lead Vehicle Departure Alert</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable this will notify when the leading vehicle drives away.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Retain hotspot/tethering state</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enabling this toggle will retain the hotspot/tethering toggle state across reboots.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Driving Screen Off: Non-Critical Events</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>When &lt;b&gt;Driving Screen Off Timer&lt;/b&gt; is not set to &lt;b&gt;&quot;Always On&quot;&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enabled: Wake the brightness of the screen to display all events.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disabled: Wake the brightness of the screen to display critical events.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
-    <name>SPVehiclesPanel</name>
-    <message>
-        <source>Hyundai/Kia/Genesis (HKG)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Enhanced SCC Radar Interceptor ℹ</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>sunnypilot will take over control of gas and brakes and will &lt;b&gt;NOT&lt;/b&gt; disable the car&apos;s radar. This preserves AEB.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Note: Only enable this feature if you have the Enhanced SCC Radar Interceptor hardware installed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Want to get one for your car? Reach out to sunnyhaibin#0865 on Discord for more information.</source>
-        <translation type="unfinished"></translation>
-    </message>
+    <name>SPVehiclesTogglesPanel</name>
     <message>
         <source>Toyota/Lexus</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Volkswagen MQB/PQ</source>
+        <source>Allow M.A.D.S. toggling w/ LKAS Button (Beta)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allows M.A.D.S. engagement/disengagement with &quot;LKAS&quot; button from the steering wheel.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Note: Enabling this toggle may have unexpected behavior with steering control. It is the driver&apos;s responsibility to observe their environment and make decisions accordingly.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1131,6 +1187,50 @@ Reboot now?</source>
     </message>
     <message>
         <source>Show developer UI (Dev UI) for real-time parameters from various sources.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Auto-Hide UI Buttons</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hide UI buttons on driving screen after a 30-second timeout. Tap on the screen at anytime to reveal the UI buttons.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display DM Camera in Reverse Gear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show Driver Monitoring camera while the car is in reverse gear.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Speedometer: Display True Speed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display the true vehicle current speed from wheel speed sensors.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Speedometer: Hide from Onroad Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display End-to-end Longitudinal Status (Beta)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable this will display an icon that appears when the End-to-end model decides to start or stop.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display CPU Temperature on Sidebar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable this will display the CPU core with the highest temperature on the sidebar.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1220,18 +1320,6 @@ Reboot now?</source>
         <translation>Auf Internet warten</translation>
     </message>
     <message>
-        <source>Choose Software to Install</source>
-        <translation>Software zum installieren auswählen</translation>
-    </message>
-    <message>
-        <source>Dashcam</source>
-        <translation>Dashcam</translation>
-    </message>
-    <message>
-        <source>Custom Software</source>
-        <translation>Spezifische Software</translation>
-    </message>
-    <message>
         <source>Enter URL</source>
         <translation>URL eingeben</translation>
     </message>
@@ -1258,6 +1346,14 @@ Reboot now?</source>
     <message>
         <source>Start over</source>
         <translation>Von neuem beginnen</translation>
+    </message>
+    <message>
+        <source>No custom software found at this URL.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Something went wrong. Reboot the device.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1414,6 +1510,66 @@ Reboot now?</source>
         <source>Uninstall</source>
         <translation>Deinstallieren</translation>
     </message>
+    <message>
+        <source>Current Driving Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Database updates can be downloaded while the car is off.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OpenStreetMap Database Update</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Are you sure you want to reboot and perform a database update?
+Estimated time: 30-90 minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reboot</source>
+        <translation type="unfinished">Neustart</translation>
+    </message>
+    <message>
+        <source>OpenStreetMap Database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select your location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Are you sure you want to reboot to start downloading the selected database? Estimated time: 30-90 minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitOffsetType</name>
+    <message>
+        <source>Speed Limit Offset Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Set speed limit higher or lower than actual speed limit for a more personalized drive.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>To use this feature, turn off &quot;Enable Speed Limit % Offset&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SpeedLimitStyle</name>
@@ -1435,21 +1591,6 @@ Reboot now?</source>
     </message>
     <message>
         <source>Vienna</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>SpeedLimitValueOffset</name>
-    <message>
-        <source>Speed Limit Offset (MPH / KM/H) ℹ</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Set speed limit higher or lower than actual speed limit for a more personalized drive.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>To use this feature, turn off &quot;Enable Speed Limit % Offset&quot;.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1568,11 +1709,11 @@ Reboot now?</source>
     </message>
     <message>
         <source>Experimental openpilot Longitudinal Control</source>
-        <translation>Experimenteller Openpilot Tempomat</translation>
+        <translation type="vanished">Experimenteller Openpilot Tempomat</translation>
     </message>
     <message>
         <source>WARNING: openpilot longitudinal control is experimental for this car and will disable Automatic Emergency Braking (AEB).</source>
-        <translation>WARNUNG: Der Openpilot Tempomat ist für dieses Auto experimentell und deaktiviert den Notbremsassistenten.</translation>
+        <translation type="vanished">WARNUNG: Der Openpilot Tempomat ist für dieses Auto experimentell und deaktiviert den Notbremsassistenten.</translation>
     </message>
     <message>
         <source>Disengage on Accelerator Pedal</source>
@@ -1580,7 +1721,7 @@ Reboot now?</source>
     </message>
     <message>
         <source>On this car, openpilot defaults to the car&apos;s built-in ACC instead of openpilot&apos;s longitudinal control. Enable this to switch to openpilot longitudinal control. Enabling Experimental mode is recommended when using experimental openpilot longitudinal control.</source>
-        <translation>Bei diesem auto wird standardmäßig der im Auto eingebaute adaptive Tempomat anstelle des Openpilot Tempomats benutzt. Aktiviere diesen Schalter, um zum Openpilot Tempomaten zu wechseln. Es ist empfohlen den Experimentellen Modus bei Nutzung des Openpilot Tempomats zu aktivieren.</translation>
+        <translation type="vanished">Bei diesem auto wird standardmäßig der im Auto eingebaute adaptive Tempomat anstelle des Openpilot Tempomats benutzt. Aktiviere diesen Schalter, um zum Openpilot Tempomaten zu wechseln. Es ist empfohlen den Experimentellen Modus bei Nutzung des Openpilot Tempomats zu aktivieren.</translation>
     </message>
     <message>
         <source>openpilot defaults to driving in &lt;b&gt;chill mode&lt;/b&gt;. Experimental mode enables &lt;b&gt;alpha-level features&lt;/b&gt; that aren&apos;t ready for chill mode. Experimental features are listed below:</source>
@@ -1628,6 +1769,27 @@ Reboot now?</source>
     </message>
     <message>
         <source>When enabled, pressing the accelerator pedal will disengage sunnypilot.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>openpilot Longitudinal Control (Alpha)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>WARNING: openpilot longitudinal control is in alpha for this car and will disable Automatic Emergency Braking (AEB).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>On this car, openpilot defaults to the car&apos;s built-in ACC instead of openpilot&apos;s longitudinal control. Enable this to switch to openpilot longitudinal control. Enabling Experimental mode is recommended when enabling openpilot longitudinal control alpha.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Custom Stock Longitudinal Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>When enabled, sunnypilot will attempt to control stock longitudinal control with ACC button presses.
+This feature must be used along with SLC, and/or V-TSC, and/or M-TSC.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1686,25 +1848,6 @@ Reboot now?</source>
     <message>
         <source>Update failed</source>
         <translation>Aktualisierung fehlgeschlagen</translation>
-    </message>
-</context>
-<context>
-    <name>VwAccType</name>
-    <message>
-        <source>Short Press +1/-1 Type</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Define the type of ACC control your car has with short press to +1 or -1.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>+/-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>RES/SET</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

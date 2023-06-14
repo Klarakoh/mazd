@@ -117,15 +117,15 @@ Please use caution when using this feature. Only use the blinker when traffic an
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Nudge</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Nudgeless</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>s</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -156,6 +156,29 @@ Please use caution when using this feature. Only use the blinker when traffic an
     </message>
 </context>
 <context>
+    <name>ChevronInfo</name>
+    <message>
+        <source>Display Metrics above Chevron</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display useful metrics above the chevron that tracks the lead car (only applicable to cars with openpilot longitudinal control).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OFF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Distance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Speed</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ConfirmationDialog</name>
     <message>
         <source>Ok</source>
@@ -182,7 +205,7 @@ Please use caution when using this feature. Only use the blinker when traffic an
     </message>
 </context>
 <context>
-    <name>DevUiRow</name>
+    <name>DevUiInfo</name>
     <message>
         <source>Developer UI List</source>
         <translation type="unfinished"></translation>
@@ -192,11 +215,11 @@ Please use caution when using this feature. Only use the blinker when traffic an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>1-Row</source>
+        <source>5 Metrics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>2-Row</source>
+        <source>10 Metrics</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -247,6 +270,10 @@ Please use caution when using this feature. Only use the blinker when traffic an
         <translation>REVISAR</translation>
     </message>
     <message>
+        <source>Review the rules, features, and limitations of openpilot</source>
+        <translation type="vanished">Revisar regras, aprimoramentos e limitações do openpilot</translation>
+    </message>
+    <message>
         <source>Are you sure you want to review the training guide?</source>
         <translation>Tem certeza que quer rever o treinamento?</translation>
     </message>
@@ -277,6 +304,10 @@ Please use caution when using this feature. Only use the blinker when traffic an
     <message>
         <source>Power Off</source>
         <translation>Desligar</translation>
+    </message>
+    <message>
+        <source>openpilot requires the device to be mounted within 4° left or right and within 5° up or 8° down. openpilot is continuously calibrating, resetting is rarely required.</source>
+        <translation type="vanished">O openpilot requer que o dispositivo seja montado dentro de 4° esquerda ou direita e dentro de 5° para cima ou 8° para baixo. O openpilot está continuamente calibrando, resetar raramente é necessário.</translation>
     </message>
     <message>
         <source> Your device is pointed %1° %2 and %3° %4.</source>
@@ -321,6 +352,26 @@ Please use caution when using this feature. Only use the blinker when traffic an
     <message>
         <source>Review</source>
         <translation>Revisar</translation>
+    </message>
+    <message>
+        <source>Fleet Manager PIN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error Troubleshoot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display error from the tmux session when an error has occurred from a system process.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset Mapbox Access Token</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Are you sure you want to reset the Mapbox access token?</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Review the rules, features, and limitations of sunnypilot</source>
@@ -426,18 +477,6 @@ Please use caution when using this feature. Only use the blinker when traffic an
     <message>
         <source>Installing...</source>
         <translation>Instalando...</translation>
-    </message>
-    <message>
-        <source>Receiving objects: </source>
-        <translation>Recebendo objetos: </translation>
-    </message>
-    <message>
-        <source>Resolving deltas: </source>
-        <translation>Resolvendo deltas: </translation>
-    </message>
-    <message>
-        <source>Updating files: </source>
-        <translation>Atualizando arquivos: </translation>
     </message>
 </context>
 <context>
@@ -545,14 +584,6 @@ trabalho definido</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Always On</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Immediate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>s</source>
         <translation type="unfinished"></translation>
     </message>
@@ -562,6 +593,14 @@ trabalho definido</translation>
     </message>
     <message>
         <source>h</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Always On</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Immediate</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -621,11 +660,11 @@ trabalho definido</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Always On</source>
+        <source>s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>s</source>
+        <source>Always On</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -745,6 +784,10 @@ trabalho definido</translation>
         <source>dashcam</source>
         <translation>dashcam</translation>
     </message>
+    <message>
+        <source>openpilot</source>
+        <translation type="vanished">openpilot</translation>
+    </message>
     <message numerus="yes">
         <source>%n minute(s) ago</source>
         <translation>
@@ -782,16 +825,8 @@ trabalho definido</translation>
         <translation>Tem certeza que quer resetar seu dispositivo?</translation>
     </message>
     <message>
-        <source>Resetting device...</source>
-        <translation>Resetando dispositivo...</translation>
-    </message>
-    <message>
         <source>System Reset</source>
         <translation>Resetar Sistema</translation>
-    </message>
-    <message>
-        <source>System reset triggered. Press confirm to erase all content and settings. Press cancel to resume boot.</source>
-        <translation>Solicitado reset do sistema. Confirme para apagar todo conteúdo e configurações. Aperte cancelar para continuar boot.</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -806,8 +841,18 @@ trabalho definido</translation>
         <translation>Confirmar</translation>
     </message>
     <message>
-        <source>Unable to mount data partition. Press confirm to reset your device.</source>
-        <translation>Não foi possível montar a partição de dados. Pressione confirmar para resetar seu dispositivo.</translation>
+        <source>Unable to mount data partition. Partition may be corrupted. Press confirm to erase and reset your device.</source>
+        <translation>Não é possível montar a partição de dados. Partição corrompida. Confirme para apagar e redefinir o dispositivo.</translation>
+    </message>
+    <message>
+        <source>Press confirm to erase all content and settings. Press cancel to resume boot.</source>
+        <translation>Pressione confirmar para apagar todo o conteúdo e configurações. Pressione cancelar para voltar.</translation>
+    </message>
+    <message>
+        <source>Resetting device...
+This may take up to a minute.</source>
+        <translation>Redefinindo o dispositivo
+Isso pode levar até um minuto.</translation>
     </message>
 </context>
 <context>
@@ -849,11 +894,27 @@ trabalho definido</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Toggle M.A.D.S. with Cruise Main</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allows M.A.D.S. engagement/disengagement with &quot;Cruise Main&quot; cruise control button from the steering wheel.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Pause Lateral Below Speed w/ Blinker</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enable this toggle to pause lateral actuation with blinker when traveling below 30 MPH or 50 KM/H.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Block Lane Change: Road Edge Detection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable this toggle to block lane change when road edge is detected on the stalk actuated side.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -878,6 +939,14 @@ trabalho definido</translation>
     </message>
     <message>
         <source>Add custom offsets to Camera and Path in sunnypilot.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Auto Lane Change: Delay with Blind Spot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Toggle to enable a delay timer for seamless lane changes when blind spot monitoring (BSM) detects a obstructing vehicle, ensuring safe maneuvering.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -909,19 +978,11 @@ trabalho definido</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&quot;Torque Lateral Control Live Tune&quot;&lt;br&gt;You must restart your car or your device to apply these changes.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Torque Lateral Controller Self-Tune</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enables self-tune for Torque lateral control.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&quot;Torque Lateral Controller Self-Tune&quot;&lt;br&gt;You must restart your car or your device to apply these changes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -949,7 +1010,7 @@ trabalho definido</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enable Speed Limit % Offset</source>
+        <source>Enable Speed Limit Offset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -984,6 +1045,10 @@ trabalho definido</translation>
         <source>OSM: Use Offline Database</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>You must restart your car or your device to apply these changes.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SPGeneralPanel</name>
@@ -1008,11 +1073,35 @@ trabalho definido</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Custom Boot Screen</source>
+        <source>Lead Vehicle Departure Alert</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Display sunnypilot welcome screen while booting the device.</source>
+        <source>Enable this will notify when the leading vehicle drives away.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Retain hotspot/tethering state</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enabling this toggle will retain the hotspot/tethering toggle state across reboots.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Driving Screen Off: Non-Critical Events</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>When &lt;b&gt;Driving Screen Off Timer&lt;/b&gt; is not set to &lt;b&gt;&quot;Always On&quot;&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enabled: Wake the brightness of the screen to display all events.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disabled: Wake the brightness of the screen to display critical events.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1021,18 +1110,6 @@ trabalho definido</translation>
     </message>
     <message>
         <source>Disable uploads completely when onroad. Necessary to avoid high data usage when connected to Wi-Fi hotspot. Turn on this feature if you are looking to utilize map-based features, such as Speed Limit Control (SLC) and Map-based Turn Speed Control (MTSC).</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Error Troubleshoot</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>VIEW</source>
-        <translation type="unfinished">VER</translation>
-    </message>
-    <message>
-        <source>Display error from the tmux session when an error has occurred from a system process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1045,33 +1122,21 @@ trabalho definido</translation>
     </message>
 </context>
 <context>
-    <name>SPVehiclesPanel</name>
-    <message>
-        <source>Hyundai/Kia/Genesis (HKG)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Enhanced SCC Radar Interceptor ℹ</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>sunnypilot will take over control of gas and brakes and will &lt;b&gt;NOT&lt;/b&gt; disable the car&apos;s radar. This preserves AEB.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Note: Only enable this feature if you have the Enhanced SCC Radar Interceptor hardware installed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Want to get one for your car? Reach out to sunnyhaibin#0865 on Discord for more information.</source>
-        <translation type="unfinished"></translation>
-    </message>
+    <name>SPVehiclesTogglesPanel</name>
     <message>
         <source>Toyota/Lexus</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Volkswagen MQB/PQ</source>
+        <source>Allow M.A.D.S. toggling w/ LKAS Button (Beta)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allows M.A.D.S. engagement/disengagement with &quot;LKAS&quot; button from the steering wheel.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Note: Enabling this toggle may have unexpected behavior with steering control. It is the driver&apos;s responsibility to observe their environment and make decisions accordingly.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1091,6 +1156,30 @@ trabalho definido</translation>
     </message>
     <message>
         <source>Enable this will display time spent at a stop (i.e., at a stop lights, stop signs, traffic congestions).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show Developer UI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show developer UI (Dev UI) for real-time parameters from various sources.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Auto-Hide UI Buttons</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hide UI buttons on driving screen after a 30-second timeout. Tap on the screen at anytime to reveal the UI buttons.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display DM Camera in Reverse Gear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show Driver Monitoring camera while the car is in reverse gear.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1122,17 +1211,37 @@ trabalho definido</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Speedometer: Display True Speed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display the true vehicle current speed from wheel speed sensors.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Speedometer: Hide from Onroad Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display End-to-end Longitudinal Status (Beta)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable this will display an icon that appears when the End-to-end model decides to start or stop.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Display CPU Temperature on Sidebar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable this will display the CPU core with the highest temperature on the sidebar.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&quot;Enable Mapbox Navigation&quot;
 You must restart your car or your device to apply these changes.
 Reboot now?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Show Developer UI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Show developer UI (Dev UI) for real-time parameters from various sources.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1222,18 +1331,6 @@ Reboot now?</source>
         <translation>Esperando pela internet</translation>
     </message>
     <message>
-        <source>Choose Software to Install</source>
-        <translation>Escolher Software para Instalar</translation>
-    </message>
-    <message>
-        <source>Dashcam</source>
-        <translation>Dashcam</translation>
-    </message>
-    <message>
-        <source>Custom Software</source>
-        <translation>Sofware Customizado</translation>
-    </message>
-    <message>
         <source>Enter URL</source>
         <translation>Preencher URL</translation>
     </message>
@@ -1260,6 +1357,14 @@ Reboot now?</source>
     <message>
         <source>Start over</source>
         <translation>Inicializar</translation>
+    </message>
+    <message>
+        <source>No custom software found at this URL.</source>
+        <translation>Não há software personalizado nesta URL.</translation>
+    </message>
+    <message>
+        <source>Something went wrong. Reboot the device.</source>
+        <translation>Algo deu errado. Reinicie o dispositivo.</translation>
     </message>
 </context>
 <context>
@@ -1414,6 +1519,66 @@ Reboot now?</source>
         <source>Uninstall</source>
         <translation>Desinstalar</translation>
     </message>
+    <message>
+        <source>Current Driving Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Database updates can be downloaded while the car is off.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OpenStreetMap Database Update</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Are you sure you want to reboot and perform a database update?
+Estimated time: 30-90 minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reboot</source>
+        <translation type="unfinished">Reiniciar</translation>
+    </message>
+    <message>
+        <source>OpenStreetMap Database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select your location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Are you sure you want to reboot to start downloading the selected database? Estimated time: 30-90 minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimitOffsetType</name>
+    <message>
+        <source>Speed Limit Offset Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Set speed limit higher or lower than actual speed limit for a more personalized drive.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>To use this feature, turn off &quot;Enable Speed Limit % Offset&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SpeedLimitStyle</name>
@@ -1435,21 +1600,6 @@ Reboot now?</source>
     </message>
     <message>
         <source>Vienna</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>SpeedLimitValueOffset</name>
-    <message>
-        <source>Speed Limit Offset (MPH / KM/H) ℹ</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Set speed limit higher or lower than actual speed limit for a more personalized drive.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>To use this feature, turn off &quot;Enable Speed Limit % Offset&quot;.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1521,6 +1671,14 @@ Reboot now?</source>
 <context>
     <name>TogglesPanel</name>
     <message>
+        <source>Enable openpilot</source>
+        <translation type="vanished">Ativar openpilot</translation>
+    </message>
+    <message>
+        <source>Use the openpilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off.</source>
+        <translation type="vanished">Use o sistema openpilot para controle de cruzeiro adaptativo e assistência ao motorista de manutenção de faixa. Sua atenção é necessária o tempo todo para usar esse recurso. A alteração desta configuração tem efeito quando o carro é desligado.</translation>
+    </message>
+    <message>
         <source>Enable Lane Departure Warnings</source>
         <translation>Ativar Avisos de Saída de Faixa</translation>
     </message>
@@ -1545,12 +1703,12 @@ Reboot now?</source>
         <translation>Upload dados da câmera voltada para o motorista e ajude a melhorar o algoritmo de monitoramentor.</translation>
     </message>
     <message>
-        <source>Experimental openpilot Longitudinal Control</source>
-        <translation>Controle longitudinal experimental openpilot</translation>
-    </message>
-    <message>
         <source>Disengage on Accelerator Pedal</source>
         <translation>Desacionar com Pedal do Acelerador</translation>
+    </message>
+    <message>
+        <source>When enabled, pressing the accelerator pedal will disengage openpilot.</source>
+        <translation type="vanished">Quando ativado, pressionar o pedal do acelerador desacionará o openpilot.</translation>
     </message>
     <message>
         <source>Show ETA in 24h Format</source>
@@ -1571,14 +1729,6 @@ Reboot now?</source>
     <message>
         <source>Experimental Mode</source>
         <translation>Modo Experimental</translation>
-    </message>
-    <message>
-        <source>WARNING: openpilot longitudinal control is experimental for this car and will disable Automatic Emergency Braking (AEB).</source>
-        <translation>ATENÇÃO: o controle longitudinal do openpilot é experimental para este carro e desativará a Frenagem Automática de Emergência (AEB).</translation>
-    </message>
-    <message>
-        <source>On this car, openpilot defaults to the car&apos;s built-in ACC instead of openpilot&apos;s longitudinal control. Enable this to switch to openpilot longitudinal control. Enabling Experimental mode is recommended when using experimental openpilot longitudinal control.</source>
-        <translation>Neste carro o penpilot por padrão utiliza o ACC nativo do veículo ao invés de controlar longitudinalmente. Ative isto para mudar para o controle longitudinal do openpilot. Ativar o Modo Experimental é recomendado quando em uso do controle longitudinal experimental do openpilot.</translation>
     </message>
     <message>
         <source>openpilot defaults to driving in &lt;b&gt;chill mode&lt;/b&gt;. Experimental mode enables &lt;b&gt;alpha-level features&lt;/b&gt; that aren&apos;t ready for chill mode. Experimental features are listed below:</source>
@@ -1617,11 +1767,32 @@ Reboot now?</source>
         <translation>Ative o controle longitudinal experimental para permitir o modo Experimental.</translation>
     </message>
     <message>
+        <source>openpilot Longitudinal Control (Alpha)</source>
+        <translation>Controle Longitudinal openpilot (Alpha)</translation>
+    </message>
+    <message>
+        <source>WARNING: openpilot longitudinal control is in alpha for this car and will disable Automatic Emergency Braking (AEB).</source>
+        <translation>AVISO: o controle longitudinal openpilot está em alfa para este carro e desativará a Frenagem Automática de Emergência (AEB).</translation>
+    </message>
+    <message>
+        <source>On this car, openpilot defaults to the car&apos;s built-in ACC instead of openpilot&apos;s longitudinal control. Enable this to switch to openpilot longitudinal control. Enabling Experimental mode is recommended when enabling openpilot longitudinal control alpha.</source>
+        <translation>Neste carro, o openpilot tem como padrão o ACC embutido do carro em vez do controle longitudinal do openpilot. Habilite isso para alternar para o controle longitudinal openpilot. Recomenda-se ativar o modo Experimental ao ativar o alfa de controle longitudinal openpilot.</translation>
+    </message>
+    <message>
         <source>Enable sunnypilot</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use the sunnypilot system for adaptive cruise control and lane keep driver assistance. Your attention is required at all times to use this feature. Changing this setting takes effect when the car is powered off.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Custom Stock Longitudinal Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>When enabled, sunnypilot will attempt to control stock longitudinal control with ACC button presses.
+This feature must be used along with SLC, and/or V-TSC, and/or M-TSC.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1684,25 +1855,6 @@ Reboot now?</source>
     <message>
         <source>Update failed</source>
         <translation>Falha na atualização</translation>
-    </message>
-</context>
-<context>
-    <name>VwAccType</name>
-    <message>
-        <source>Short Press +1/-1 Type</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Define the type of ACC control your car has with short press to +1 or -1.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>+/-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>RES/SET</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

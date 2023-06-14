@@ -14,14 +14,17 @@ from common.params import Params, ParamKeyType
 from common.text_window import TextWindow
 from selfdrive.boardd.set_time import set_time
 from system.hardware import HARDWARE, PC
-from selfdrive.manager.helpers import unblock_stdout
+from selfdrive.manager.helpers import unblock_stdout, write_onroad_params
 from selfdrive.manager.process import ensure_running
 from selfdrive.manager.process_config import managed_processes
 from selfdrive.athena.registration import register, UNREGISTERED_DONGLE_ID
 from system.swaglog import cloudlog, add_file_handler
 from system.version import is_dirty, get_commit, get_version, get_origin, get_short_branch, \
-                              terms_version, training_version, is_tested_branch, is_release_branch
+                           get_normalized_origin, terms_version, training_version, \
+                           is_tested_branch, is_release_branch
 
+
+sys.path.append(os.path.join(BASEDIR, "third_party/mapd"))
 
 
 def manager_init() -> None:
@@ -29,7 +32,7 @@ def manager_init() -> None:
   set_time(cloudlog)
 
   # save boot log
-  subprocess.call("./bootlog", cwd=os.path.join(BASEDIR, "selfdrive/loggerd"))
+  subprocess.call("./bootlog", cwd=os.path.join(BASEDIR, "system/loggerd"))
 
   params = Params()
   params.clear_all(ParamKeyType.CLEAR_ON_MANAGER_START)
@@ -44,6 +47,7 @@ def manager_init() -> None:
 
     ("AccMadsCombo", "1"),
     ("AutoLaneChangeTimer", "0"),
+    ("AutoLaneChangeBsmDelay", "1"),
     ("BelowSpeedPause", "0"),
     ("BrakeLights", "0"),
     ("BrightnessControl", "0"),
@@ -54,29 +58,33 @@ def manager_init() -> None:
     ("CarModel", ""),
     ("CarModelText", ""),
     ("ChevronInfo", "1"),
+    ("MadsCruiseMain", "1"),
     ("CustomBootScreen", "0"),
     ("CustomOffsets", "0"),
     ("DevUI", "1"),
     ("DevUIRow", "1"),
     ("DisableOnroadUploads", "0"),
-    ("DisengageLateralOnBrake", "1"),
-    ("DynamicLaneProfile", "2"),
-    ("DynamicLaneProfileToggle", "1"),
+    ("DisengageLateralOnBrake", "0"),
+    ("DynamicLaneProfile", "1"),
+    ("DynamicLaneProfileToggle", "0"),
     ("EnableMads", "1"),
-    ("EndToEndLongAlert", "0"),
-    ("EndToEndLongToggle", "1"),
     ("EnhancedScc", "0"),
     ("GapAdjustCruise", "1"),
+    ("GapAdjustCruiseMax", "0"),
+    ("GapAdjustCruiseMin", "0"),
     ("GapAdjustCruiseMode", "0"),
-    ("GapAdjustCruiseTr", "4"),
+    ("GapAdjustCruiseTr", "3"),
     ("GpxDeleteAfterUpload", "1"),
     ("GpxDeleteIfUploaded", "1"),
     ("HandsOnWheelMonitoring", "0"),
+    ("HideVEgoUi", "0"),
     ("LastSpeedLimitSignTap", "0"),
+    ("LkasToggle", "0"),
     ("MadsIconToggle", "1"),
     ("MaxTimeOffroad", "9"),
-    ("OnroadScreenOff", "0"),
+    ("OnroadScreenOff", "-2"),
     ("OnroadScreenOffBrightness", "50"),
+    ("OnroadScreenOffEvent", "1"),
     ("PathOffset", "0"),
     ("ReverseAccChange", "0"),
     ("ShowDebugUI", "1"),
@@ -84,11 +92,13 @@ def manager_init() -> None:
     ("SpeedLimitPercOffset", "1"),
     ("SpeedLimitStyle", "0"),
     ("SpeedLimitValueOffset", "0"),
+    ("SpeedLimitOffsetType", "0"),
     ("StandStillTimer", "0"),
     ("StockLongToyota", "0"),
     ("TorqueDeadzoneDeg", "0"),
     ("TorqueFriction", "1"),
     ("TorqueMaxLatAccel", "250"),
+    ("TrueVEgoUi", "0"),
     ("TurnSpeedControl", "0"),
     ("TurnVisionControl", "0"),
     ("VisionCurveLaneless", "0"),
@@ -104,6 +114,10 @@ def manager_init() -> None:
   for k, v in default_params:
     if params.get(k) is None:
       params.put(k, v)
+
+  # parameters set by Environment Variables
+  if os.getenv("HANDSMONITORING") is not None:
+    params.put_bool("HandsOnWheelMonitoring", bool(int(os.getenv("HANDSMONITORING", "0"))))
 
   # is this dashcam?
   if os.getenv("PASSIVE") is not None:
@@ -144,7 +158,12 @@ def manager_init() -> None:
 
   # init logging
   sentry.init(sentry.SentryProject.SELFDRIVE)
-  cloudlog.bind_global(dongle_id=dongle_id, version=get_version(), dirty=is_dirty(),
+  cloudlog.bind_global(dongle_id=dongle_id,
+                       version=get_version(),
+                       origin=get_normalized_origin(),
+                       branch=get_short_branch(),
+                       commit=get_commit(),
+                       dirty=is_dirty(),
                        device=HARDWARE.get_device_type())
 
 
@@ -182,12 +201,27 @@ def manager_thread() -> None:
   sm = messaging.SubMaster(['deviceState', 'carParams'], poll=['deviceState'])
   pm = messaging.PubMaster(['managerState'])
 
+  write_onroad_params(False, params)
   ensure_running(managed_processes.values(), False, params=params, CP=sm['carParams'], not_run=ignore)
+
+  started_prev = False
 
   while True:
     sm.update()
 
     started = sm['deviceState'].started
+
+    if started and not started_prev:
+      params.clear_all(ParamKeyType.CLEAR_ON_ONROAD_TRANSITION)
+    elif not started and started_prev:
+      params.clear_all(ParamKeyType.CLEAR_ON_OFFROAD_TRANSITION)
+
+    # update onroad params, which drives boardd's safety setter thread
+    if started != started_prev:
+      write_onroad_params(started, params)
+
+    started_prev = started
+
     ensure_running(managed_processes.values(), started, params=params, CP=sm['carParams'], not_run=ignore)
 
     running = ' '.join("%s%s\u001b[0m" % ("\u001b[32m" if p.proc.is_alive() else "\u001b[31m", p.name)
@@ -205,7 +239,7 @@ def manager_thread() -> None:
     for param in ("DoUninstall", "DoShutdown", "DoReboot"):
       if params.get_bool(param):
         shutdown = True
-        params.put("LastManagerExitReason", param)
+        params.put("LastManagerExitReason", f"{param} {datetime.datetime.now()}")
         cloudlog.warning(f"Shutting down manager - {param} set")
 
     if shutdown:
